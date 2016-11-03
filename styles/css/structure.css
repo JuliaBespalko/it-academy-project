@@ -1,0 +1,15 @@
+body {
+  min-width: 320px;
+  font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
+}
+.container {
+  max-width: 1170px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: '';
+  width: 100%;
+  clear: both;
+  display: block;
+}
