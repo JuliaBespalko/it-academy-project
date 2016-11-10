@@ -1,0 +1,133 @@
+.new-posts {
+  border-top: 1px solid #e6e6e6;
+  margin: 60px auto 42px;
+}
+.new-posts-body {
+  display: flex;
+  font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
+  padding: 0;
+  justify-content: space-between;
+}
+.new-post {
+  display: block;
+  flex-basis: 25%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  transition: border-color 0.2s;
+}
+.new-post:hover {
+  border-bottom: 1px solid #be926f;
+}
+.new-posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 30px 0;
+}
+.new-post-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #232323;
+  letter-spacing: 4px;
+}
+.new-posts-previous {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.8666em;
+  color: #999999;
+  line-height: 1.8461;
+  font-weight: bold;
+  vertical-align: middle;
+  opacity: 1;
+  transition: color, opacity 0.2s;
+}
+.previous-img {
+  width: 13px;
+  height: 23px;
+  margin-right: 18px;
+  background-image: url("../image/icon-prew-grey.png");
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.previous-img:hover,
+.new-posts-previous:hover {
+  color: #be926f;
+  background-image: url("../image/icon-prew-brown.png");
+  background-repeat: no-repeat;
+}
+.new-posts-next {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.8666em;
+  color: #999999;
+  line-height: 1.8461;
+  font-weight: bold;
+  vertical-align: middle;
+  opacity: 1;
+  transition: color, opacity 0.2s;
+}
+.next-img {
+  width: 13px;
+  height: 23px;
+  margin-left: 18px;
+  background-image: url("../image/icon-next-grey.png");
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.next-img:hover {
+  background-image: url("../image/icon-next-brown.png");
+  background-repeat: no-repeat;
+}
+.new-posts-next:hover {
+  color: #be926f;
+}
+.new-post-category-care {
+   font-size: 0.8em;
+   line-height: 2em;
+   margin: 15px auto;
+   color: #7f9f5d;
+ }
+.new-post-category-furniture {
+  font-size: 0.8em;
+  line-height: 2em;
+  margin: 15px auto;
+  color: #538dc8;
+}
+.new-post-category {
+  font-size: 0.8em;
+  line-height: 2em;
+  margin: 15px auto;
+  color: #a677c7;
+}
+.new-post-category-beauty {
+  font-size: 0.8em;
+  line-height: 2em;
+  margin: 15px auto;
+  color: #cd7b87;
+}
+.new-post-name {
+  font-size: 1.2em;
+  line-height: 1.333;
+  color: #000000;
+}
+.new-post-date {
+  font-size: 0.9em;
+  line-height: 1.7142;
+  color: #999999;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  position: relative;
+}
+.new-post-date:before {
+  content: '';
+  background-image: url("../image/icon-clock.png");
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}

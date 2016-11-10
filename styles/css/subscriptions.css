@@ -1,0 +1,53 @@
+.subscriptions .container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+.subscriptions-text{
+  width: 45%;
+}
+.subscription-text-title {
+  font-size: 1.2em;
+  line-height: 1.333;
+  color: #333333;
+}
+.subscription-text {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666666;
+}
+.subscriptions-input {
+  display: flex;
+}
+.subscription-input {
+  float: left;
+}
+.subscription-input input {
+  width: 390px;
+  height: 50px;
+  font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
+  color: #b8b8b8;
+  font-size: 1.0666em;
+  background: none;
+  border: 1px solid #e8e8e8;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+.subscription-input button {
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
+  background-color: #f8f8f8;
+  line-height: 1.7222;
+  color: #333333;
+  border: 1px solid #be926f;
+  transition: background-color 0.2s;
+}
+.subscription-input button:hover {
+  background-color: rgba(190, 146, 111, 0.5);
+}
+.subscription-input img {
+  vertical-align: middle;
+  margin-right: 20px;
+}

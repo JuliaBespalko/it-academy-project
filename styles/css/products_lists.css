@@ -1,24 +1,24 @@
-.featured-products .title {
+.products .title {
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   font-size: 1.1333em;
   line-height: 1.2941;
   color: #232323;
   }
-.featured-products-list {
+.products-list {
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 23px auto;
 }
-.featured-product {
+.product {
   flex-basis: 25%;
   flex-shrink: 0;
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
   text-align: center;
 }
-.featured-product + .featured-product {
+.product + .product {
   border-left: none;
 }
 .product-title {
@@ -115,8 +115,8 @@
 .product-actions .additional-links .zoom {
   background-image: url('../image/icon-zoom.png');
 }
-.featured-product:hover .product-actions:before,
-.featured-product:hover .product-actions .additional-links {
+.product:hover .product-actions:before,
+.product:hover .product-actions .additional-links {
   opacity: 1;
 }
 .product-actions .additional-links ul a:hover {
