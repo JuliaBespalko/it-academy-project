@@ -32,32 +32,7 @@
   color: #232323;
   letter-spacing: 4px;
 }
-.new-posts-previous {
-  display: flex;
-  flex-shrink: 0;
-  font-size: 0.8666em;
-  color: #999999;
-  line-height: 1.8461;
-  font-weight: bold;
-  vertical-align: middle;
-  opacity: 1;
-  transition: color, opacity 0.2s;
-}
-.previous-img {
-  width: 13px;
-  height: 23px;
-  margin-right: 18px;
-  background-image: url("../image/icon-prew-grey.png");
-  background-repeat: no-repeat;
-  opacity: 1;
-  transition: opacity 0.2s;
-}
-.previous-img:hover,
-.new-posts-previous:hover {
-  color: #be926f;
-  background-image: url("../image/icon-prew-brown.png");
-  background-repeat: no-repeat;
-}
+.new-posts-previous,
 .new-posts-next {
   display: flex;
   flex-shrink: 0;
@@ -67,9 +42,40 @@
   font-weight: bold;
   vertical-align: middle;
   opacity: 1;
-  transition: color, opacity 0.2s;
+  transition: color 0.2s;
 }
-.next-img {
+.previous-img-grey {
+  position: relative;
+  width: 13px;
+  height: 23px;
+  margin-right: 18px;
+  background-image: url("../image/icon-prew-grey.png");
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.previous-img-brown {
+  position: absolute;
+  width: 13px;
+  height: 23px;
+  margin-right: 18px;
+  background-image: url("../image/icon-prew-brown.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s
+}
+.new-posts-previous:hover,
+.new-posts-next:hover {
+  color: #be926f;
+ }
+.new-posts-previous:hover .previous-img-grey {
+  opacity: 0;
+}
+.new-posts-previous:hover .previous-img-brown {
+  opacity: 0.7;
+}
+.next-img-grey {
+  position: relative;
   width: 13px;
   height: 23px;
   margin-left: 18px;
@@ -78,12 +84,21 @@
   opacity: 1;
   transition: opacity 0.2s;
 }
-.next-img:hover {
+.next-img-brown {
+  position: absolute;
+  width: 13px;
+  height: 23px;
+  margin-left: 18px;
   background-image: url("../image/icon-next-brown.png");
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s
 }
-.new-posts-next:hover {
-  color: #be926f;
+.new-posts-next:hover .next-img-grey {
+  opacity: 0;
+}
+.new-posts-next:hover .next-img-brown {
+  opacity: 0.7;
 }
 .new-post-category-care {
    font-size: 0.8em;
