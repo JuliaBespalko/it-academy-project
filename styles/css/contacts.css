@@ -1,0 +1,52 @@
+.contact-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.call-us,
+.location,
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  flex-basis: 33.333%;
+}
+.call-us-title,
+.location-title,
+.mail-title {
+  font-size: 1.333em;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.call-us-number {
+  color: #232323;
+  font-size: 1.6em;
+  line-height: 1.4166;
+  transition: color 0.2s;
+}
+.location-address {
+  font-size: 0.9333em;
+  line-height: 2.1428;
+  color: #666666;
+  transition: color 0.2s;
+}
+.mail-address {
+  font-size: 0.9333em;
+  line-height: 1.4166;
+  color: #be926f;
+}
+.call-us:hover .call-us-title,
+.call-us:hover .call-us-number,
+.location:hover .location-title,
+.location:hover .location-address,
+.mail:hover .mail-title {
+  color: #be926f;
+  transition: color 0.2s;
+}

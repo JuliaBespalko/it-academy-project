@@ -1,11 +1,12 @@
 .subscriptions .container {
   display: flex;
   justify-content: space-between;
-
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 .subscriptions-text{
   width: 45%;
+  margin-left: 5px;
 }
 .subscription-text-title {
   font-size: 1.2em;
@@ -21,10 +22,10 @@
   display: flex;
 }
 .subscription-input {
-  float: left;
+  align-self: center;
 }
 .subscription-input input {
-  width: 390px;
+  width: 370px;
   height: 50px;
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   color: #b8b8b8;
@@ -32,7 +33,7 @@
   background: none;
   border: 1px solid #e8e8e8;
   padding-left: 15px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .subscription-input button {
   width: 200px;

@@ -1,0 +1,65 @@
+.hot-links {
+  background: #f8f8f8;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.hot-links .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hot-links .container a {
+  flex-shrink: 0;
+  font-size: 1.2em;
+  line-height: 2;
+  font-weight: bold;
+  color: #333333;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.hot-links .container a:hover {
+  color: #be926f;
+  transition: color 0.2s;
+}
+.hot-links .container a:nth-child(1) {
+  margin-left: 15px;
+}
+.hot-links .container a:nth-last-child(1) {
+  margin-right: 15px;
+}
+.free-shiping:before {
+  content: '';
+  display: inline-block;
+  background-image: url("../image/icon-shiping.png");
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.customer-support:before {
+  content: '';
+  display: inline-block;
+  background-image: url("../image/icon-customer.png");
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.money-back:before {
+  content: '';
+  display: inline-block;
+  background-image: url("../image/icon-money-back.png");
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.help-center:before {
+  content: '';
+  display: inline-block;
+  background-image: url("../image/icon-help.png");
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+}

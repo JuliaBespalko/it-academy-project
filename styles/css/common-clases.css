@@ -8,4 +8,7 @@ html {
 }
 .link-unstyled {
   text-decoration: none;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }
