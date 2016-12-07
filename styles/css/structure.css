@@ -13,3 +13,6 @@ body {
   clear: both;
   display: block;
 }
+.page-body-detail-product {
+  background-color: #f7f7f7;
+}

@@ -3,32 +3,40 @@
 }
 .footer .container {
   display: flex;
-  flex-basis: 33.3333%;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 0.8666em;
   line-height: 1.84;
   color: #999999;
+  transition: color 0.2s;
   }
+.footer .container a:hover {
+  color: #000000;
+  transition: color 0.2s;
+}
 .conditions {
   display: flex;
+  justify-content: center;
 }
-.networks-link {
+.conditions a {
+  margin-right: 30px;
+}
+.networks-link{
   display: flex;
+  justify-content: flex-end;
 }
-.twitter {
-  background: url("../image/icon-twitter.png") center center no-repeat;
-  width: 19px;
-  height: 19px;
+.networks-link a {
   margin-right: 25px;
 }
-.google {
-  background: url("../image/icon-google.png") center center no-repeat;
-  width: 19px;
-  height: 19px;
-  margin-right: 25px;
-}
-.facebook {
-  background: url("../image/icon-facebook.png") center center no-repeat;
-  width: 19px;
-  height: 19px;
+
+/* @media */
+
+@media (max-width: 780px) {
+  .footer .container {
+    width: 320px;
+    justify-content: center;
+  }
+  .conditions a {
+    margin-right: 15px;
+  }
 }

@@ -50,3 +50,24 @@
   color: #be926f;
   transition: color 0.2s;
 }
+/*@media*/
+
+@media (max-width: 655px) {
+  .call-us-number {
+    font-size: 1em;
+  }
+}
+@media (max-width: 595px) {
+  .contact-link {
+    width: 320px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .call-us,
+  .location,
+  .mail {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+}

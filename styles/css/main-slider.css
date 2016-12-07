@@ -1,33 +1,40 @@
-.banner {
-  background-image: url("../page-image/banner.jpg");
-  width: 100%;
+.slider-container{
   height: 480px;
+  margin-bottom: 70px;
+}
+.slide {
+  width: 100%;
+  height: 470px;
   margin-top: 17px;
   margin-bottom: 55px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
   position: relative;
 }
-.banner-text {
+.slider-text {
   position: absolute;
+  top: 100px;
+  left: 40px;
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
-  margin: 102px 0 112px 40px;
 }
-.banner-text-top {
+.slider-text-top {
   display: inline;
   font-size: 2.6666em;
   color: #232323;
 }
-.banner-text-top .banner-first-line {
+.slider-text-top .slider-first-line {
   display: inline;
   font-size: 2em;
   font-weight: bold;
   line-height: 0.5;
 }
-.banner-text-top .banner-second-line {
+.slider-text-top .slider-second-line {
   font-size: 1.875em;
   line-height: 0.85;
   margin: 0;
 }
-.banner-text-bottom {
+.slider-text-bottom {
   color: #666666;
   font-size: 1.1333em;
 }
@@ -35,15 +42,40 @@
   position: absolute;
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   display: block;
+  top: 320px;
+  left: 40px;
   width: 110px;
   height: 40px;
   background-color: #be926f;
   text-align: center;
   font-size: 0.7333em;
   line-height: 40px;
-  margin-top: 60px;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 2px;
 }
 
+/* @media */
+
+@media (max-width: 700px) {
+  .slide {
+    width: 470px;
+  }
+}
+@media (max-width: 540px) {
+  .slider-text{
+    left: 20px;
+    margin-right: 20px;
+  }
+  .slider-text-top {
+    font-size: 1.5em;
+  }
+  .shop-now{
+    left: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .slider-text-bottom {
+    font-size: 1em;
+  }
+}

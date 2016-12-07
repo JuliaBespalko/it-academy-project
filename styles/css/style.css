@@ -2,10 +2,11 @@
 @import url(common-clases.css);
 
 @import url(header.css);
-@import url(banner.css);
+@import url(main-slider.css);
+@import url(detail-product.css);
 @import url(products_lists.css);
 @import url(special-offers.css);
-@import url(new-posts.css);
+@import url(second-slider.css);
 @import url(testimonials.css);
 @import url(subscriptions.css);
 @import url(hot-links.css);

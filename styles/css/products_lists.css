@@ -1,3 +1,6 @@
+.products {
+  margin-bottom: 35px;
+}
 .products .title {
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   font-size: 1.1333em;
@@ -121,4 +124,43 @@
 }
 .product-actions .additional-links ul a:hover {
   background-color: rgba(190, 146, 111, 0.8);
+}
+
+/*@media*/
+
+@media (max-width: 1030px) {
+  .products .title{
+    text-align: center;
   }
+  .products-list {
+    width: 600px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product{
+    flex-basis: 45%;
+  }
+   .product + .product {
+    border-left: 1px solid #e6e6e6;
+  }
+   .product:nth-child(3),
+   .product:nth-child(4) {
+     border-top: none;
+   }
+}
+@media (max-width: 640px) {
+  .products-list {
+    width: 320px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product{
+    flex-basis: 100%;
+  }
+  .product + .product {
+    border-top: none;
+  }
+}

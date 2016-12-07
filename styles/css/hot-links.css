@@ -63,3 +63,33 @@
   vertical-align: middle;
   margin-right: 15px;
 }
+
+/*@media*/
+
+@media (max-width: 1150px) {
+  .hot-links .container {
+    width: 650px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .hot-links .container a {
+    margin-bottom: 10px;
+  }
+  .hot-links .container a:nth-child(1) {
+    margin-left: 0;
+  }
+  .hot-links .container a:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 700px) {
+  .hot-links .container {
+    width: 530px;
+  }
+}
+@media (max-width: 565px) {
+  .hot-links .container {
+    width: 320px;
+    justify-content: flex-start;
+  }
+}
