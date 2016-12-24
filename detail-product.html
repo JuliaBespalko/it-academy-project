@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="uniform/css/default.css">
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <link rel="stylesheet/less" href="styles/css/index.less">
+  <script src="less.min.js"></script>
   <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
@@ -52,13 +56,210 @@
   <div class="container">
     <div class="page-head">
       <div class="page-title">OFFICE CHAIR</div>
-      <div class="way"><a href="index.html" class="link-unstyled">HOME / </a>PRODUCT</div>
+      <div class="way">
+        <a href="index.html" class="link-unstyled">
+          HOME /
+        </a>
+        PRODUCTS
+      </div>
     </div>
     <div class="detail-product">
-      <div class="product-photo"></div>
-      <div class="product-review"></div>
+      <div class="product-preview">
+        <div class="thumbs">
+          <a class=""
+             rel="gallery"
+             href="styles/page-image/chair-1.jpg">
+            <img src="styles/page-image/chair-1.jpg" alt="">
+          </a>
+          <a class=""
+             rel="gallery"
+             href="styles/page-image/chair-2.jpg">
+            <img src="styles/page-image/chair-2.jpg" alt="">
+          </a>
+          <a class=""
+             rel="gallery"
+             href="styles/page-image/chair-3.jpg">
+            <img src="styles/page-image/chair-3.jpg" alt="">
+          </a>
+          <a class=""
+             rel="gallery"
+             href="styles/page-image/chair-1.jpg">
+            <img src="styles/page-image/chair-1.jpg" alt="">
+          </a>
+          <a class=""
+             rel="gallery"
+             href="styles/page-image/chair-2.jpg">
+            <img src="styles/page-image/chair-2.jpg" alt="">
+          </a>
+          <a class=""
+             rel="gallery"
+             href="styles/page-image/chair-3.jpg">
+            <img src="styles/page-image/chair-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="product-photo">
+          <a class="fancybox"
+             rel="gallery"
+             href="styles/page-image/chair-1.jpg">
+            <img id="product-photo"
+                 src="styles/page-image/chair-1.jpg"
+                 alt="">
+          </a>
+        </div>
+      </div>
+      <div class="product-review">
+        <div class="detail-product-title">Office chair</div>
+        <div class="rating-block">
+          <span class="rating">
+            <label>
+              <span class="rating-star">
+                <input type="radio" name="rating-star" value="1">
+                <span></span>
+              </span>
+            </label>
+            <label>
+             <span class="rating-star">
+               <input type="radio" name="rating-star" value="2">
+               <span></span>
+             </span>
+            </label>
+            <label>
+              <span class="rating-star">
+                <input type="radio" name="rating-star" value="4">
+                <span></span>
+              </span>
+             </label>
+            <label>
+              <span class="rating-star">
+                <input type="radio" name="rating-star" value="4">
+                <span></span>
+              </span>
+            </label>
+            <label>
+              <span class="rating-star">
+                <input type="radio" name="rating-star" value="5">
+                <span></span>
+              </span>
+           </label>
+          </span>
+          <span class="review-number">(23 review)</span>
+        </div>
+        <div class="detail">
+          <div class="in-stock"><span>In stock</span></div>
+          <div class="serial-number">SKU: <span>SW108</span></div>
+          <div class="stuff">Category: <span>Chair</span></div>
+        </div>
+        <div class="description">
+          Pellentesque at neque porta, auctor felis eu, pulvinar magna. Donec placerat lectus nec ligula scelerisque
+          scelerisque. Nulla fringilla urna scelerisque nisi mollis ultrices. Curabitur vulputate risus elementum,
+          interdum dui quis, sodales risus.
+        </div>
+        <div class="detail-product-price"><s>$190.00</s>$90.00</div>
+        <div class="select-color"><span>Color:</span>
+          <label>
+            <span class="checker">
+              <input type="radio" name="select-color" rel="color-brown" value="brown">
+              <span class="color-brown"></span>
+            </span>
+          </label>
+          <label>
+            <span class="checker">
+            <input type="radio" name="select-color" rel="color-dark-blue" value="dark-blue">
+              <span class="color-dark-blue"></span>
+            </span>
+          </label>
+          <label>
+            <span class="checker">
+            <input type="radio" name="select-color" rel="color-dark-grey" value="black">
+              <span class="color-dark-grey"></span>
+            </span>
+          </label>
+          <label>
+            <span class="checker">
+            <input type="radio" name="select-color" rel="color-grey" value="grey">
+              <span class="color-grey"></span>
+            </span>
+          </label>
+          <label>
+            <span class="checker">
+            <input type="radio" name="select-color" rel="color-fuchsia" value="fuchsia">
+              <span class="color-fuchsia"></span>
+            </span>
+          </label>
+        </div>
+        <div class="description-buttons">
+          <div class="spinner">
+            <input type="text" title="">
+          </div>
+          <a href="#" class="add-to-carts">ADD TO CART</a>
+          <a href="#" class="to-favorites"></a>
+          <a href="#" class="to-comparison"></a>
+        </div>
+        <div class="share-on"><span>Share on:</span>
+          <ul class="list-unstyled">
+            <li class="share-facebook"><a href="#"></a></li>
+            <li class="share-twitter"><a href="#"></a></li>
+            <li class="share-google"><a href="#"></a></li>
+            <li class="share-sth"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="tabs"></div>
+    <div class="tabs">
+      <ul class="tab-nav list-unstyled clearfix">
+        <li class="tablinks"><a href="#" class="active link-unstyled" rel="tab-description">Description</a></li>
+        <li class="tablinks"><a href="#" class="link-unstyled" rel="tab-review">Reviews (23)</a></li>
+        <li class="tablinks"><a href="#" class="link-unstyled" rel="tab-add-info">Additional Information</a></li>
+      </ul>
+      <div id="tab-description" class="tabcontent active">
+        <h4>Product Description</h4>
+        <p>Proident adipisicing laborum beef ribs tri-tip dolore meatball tempor rump flank prosciutto elit do. Duis
+          tenderloin culpa excepteur. Fugiat irure est cupim dolor, ut nulla id andouille chicken spare ribs eiusmod
+          brisket biltong. Eiusmod minim tail cupim labore ad filet mignon, andouille esse enim. Sausage salami dolor ex
+          adipisicing consequat. Ground round nostrud ut fatback voluptate consequat in minim drumstick culpa dolore. Ea
+          beef prosciutto in sirloin fatback enim velit consectetur in pork belly pancetta culpa shank.</p>
+        <p>Shank quis in duis, id officia nulla. Pancetta sunt filet mignon porchetta doner turkey occaecat. Meatball
+          corned beef elit ut fugiat. Hamburger biltong tail beef in cupim proident turducken picanha. Sausage chicken
+          incididunt ad occaecat porchetta pancetta corned beef ham hock laborum nisi ullamco pork loin kielbasa
+          aliqua.</p>
+        <p>In jerky minim chicken duis ground round nostrud pork belly occaecat pastrami commodo adipisicing tongue
+          doner short loin. Officia est do, filet mignon shank pork loin anim esse quis kevin corned beef enim. Magna
+          sint sirloin ham hock cupidatat laboris. Boudin spare ribs kevin meatloaf id short loin swine flank brisket
+          aute. Reprehenderit turkey qui, boudin swine voluptate ipsum fugiat.</p>
+        <p> Salami in ball tip pig eiusmod occaecat pork chop, consequat excepteur incididunt. Ground round picanha ut
+          boudin exercitation jerky meatball strip steak ipsum labore spare ribs turducken ribeye ut aliquip. Id ipsum
+          esse nisi ball tip chuck adipisicing sint culpa t-bone brisket bresaola mollit. Enim eu kevin, tail in nisi
+          nulla sirloin adipisicing veniam dolore.</p>
+      </div>
+      <div id="tab-review" class="tabcontent">
+        <h4>Product Review</h4>
+        <p>Proident adipisicing laborum beef ribs tri-tip dolore meatball tempor rump flank prosciutto elit do. Duis
+          tenderloin culpa excepteur. Fugiat irure est cupim dolor, ut nulla id andouille chicken spare ribs eiusmod
+          brisket biltong. Eiusmod minim tail cupim labore ad filet mignon, andouille esse enim. Sausage salami dolor ex
+          adipisicing consequat. Ground round nostrud ut fatback voluptate consequat in minim drumstick culpa dolore. Ea
+          beef prosciutto in sirloin fatback enim velit consectetur in pork belly pancetta culpa shank.</p>
+        <p>Shank quis in duis, id officia nulla. Pancetta sunt filet mignon porchetta doner turkey occaecat. Meatball
+          corned beef elit ut fugiat. Hamburger biltong tail beef in cupim proident turducken picanha. Sausage chicken
+          incididunt ad occaecat porchetta pancetta corned beef ham hock laborum nisi ullamco pork loin kielbasa
+          aliqua.</p>
+        <p>In jerky minim chicken duis ground round nostrud pork belly occaecat pastrami commodo adipisicing tongue
+          doner short loin. Officia est do, filet mignon shank pork loin anim esse quis kevin corned beef enim. Magna
+          sint sirloin ham hock cupidatat laboris. Boudin spare ribs kevin meatloaf id short loin swine flank brisket
+          aute. Reprehenderit turkey qui, boudin swine voluptate ipsum fugiat.</p>
+      </div>
+      <div id="tab-add-info" class="tabcontent">
+        <h4>Additional Information</h4>
+        <p>Proident adipisicing laborum beef ribs tri-tip dolore meatball tempor rump flank prosciutto elit do. Duis
+          tenderloin culpa excepteur. Fugiat irure est cupim dolor, ut nulla id andouille chicken spare ribs eiusmod
+          brisket biltong. Eiusmod minim tail cupim labore ad filet mignon, andouille esse enim. Sausage salami dolor ex
+          adipisicing consequat. Ground round nostrud ut fatback voluptate consequat in minim drumstick culpa dolore. Ea
+          beef prosciutto in sirloin fatback enim velit consectetur in pork belly pancetta culpa shank.</p>
+        <p>Shank quis in duis, id officia nulla. Pancetta sunt filet mignon porchetta doner turkey occaecat. Meatball
+          corned beef elit ut fugiat. Hamburger biltong tail beef in cupim proident turducken picanha. Sausage chicken
+          incididunt ad occaecat porchetta pancetta corned beef ham hock laborum nisi ullamco pork loin kielbasa
+          aliqua.</p>
+      </div>
+    </div>
     <div class="slider2">
       <div class="slider2-header">
         <a href="#" class="slider2-previous link-unstyled">
@@ -73,8 +274,8 @@
           <div class="next-img-brown"></div>
         </a>
       </div>
-      <div class="slider2-body products-list">
-        <div class="product">
+      <ul class="products-list slider2-body">
+        <li class="product">
           <div class="product-title">Denim Chart In<br>
             Slim Fit
           </div>
@@ -91,8 +292,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$150</s> $124</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Ballari Chair<br>
             Hodak
           </div>
@@ -109,8 +310,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$85</s> $76</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Shayla Pendant<br>
             Chair
           </div>
@@ -128,8 +329,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$100</s> $92</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Cloverfield Wilcot<br>
             Chair
           </div>
@@ -146,8 +347,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$150</s> $117</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Denim Chart In<br>
             Slim Fit
           </div>
@@ -164,8 +365,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$150</s> $124</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Ballari Chair<br>
             Hodak
           </div>
@@ -182,8 +383,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$85</s> $76</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Shayla Pendant<br>
             Chair
           </div>
@@ -201,8 +402,8 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$100</s> $92</div>
-        </div>
-        <div class="product">
+        </li>
+        <li class="product">
           <div class="product-title">Cloverfield Wilcot<br>
             Chair
           </div>
@@ -219,84 +420,86 @@
             </div>
           </div>
           <div class="product-price"><s class="strike">$150</s> $117</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="testimonials">
+    <a href="#" class="link-unstyled">
+      <h1 class="testimonials-title">TESTIMONIALS</h1>
+      <div class="testimonials-text">
+        With over a decade of experience, we have helped our clients all over the world to create eye-catching and
+        head-turning creative solutions. We work together from our three UK offices to create high quality work.
+      </div>
+    </a>
+  </div>
+  <div class="subscriptions">
+    <div class="container">
+      <div class="subscriptions-text">
+        <div class="subscription-text-title">NEWSLETTER</div>
+        <div class="subscription-text">Keep up on our always evolving product features and technology.
+          Enter your e-mail and subscribe to our newsletter.
         </div>
       </div>
+      <form action="#" class="subscription-input">
+        <input type="email" placeholder="Email address">
+        <button><img src="styles/image/icon-subscriptions.png" width="33" height="26"><span>SUBSCRIBE</span></button>
+      </form>
     </div>
   </div>
-</div>
-<div class="testimonials">
-  <a href="#" class="link-unstyled">
-    <h1 class="testimonials-title">TESTIMONIALS</h1>
-    <div class="testimonials-text">
-      With over a decade of experience, we have helped our clients all over the world to create eye-catching and
-      head-turning creative solutions. We work together from our three UK offices to create high quality work.
+  <div class="hot-links">
+    <div class="container">
+      <a href="#" class="free-shiping link-unstyled"><span>FREE SHIPPING</span></a>
+      <a href="#" class="customer-support link-unstyled"><span>CUSTOMER SUPPORT</span></a>
+      <a href="#" class="money-back link-unstyled"><span>15 DAYS MONEY BACK</span></a>
+      <a href="#" class="help-center link-unstyled"><span>24/7 HELP CENTER</span></a>
     </div>
-  </a>
-</div>
-<div class="subscriptions">
-  <div class="container">
-    <div class="subscriptions-text">
-      <div class="subscription-text-title">NEWSLETTER</div>
-      <div class="subscription-text">Keep up on our always evolving product features and technology.
-        Enter your e-mail and subscribe to our newsletter.
+  </div>
+  <div class="contacts">
+    <div class="container contact-link">
+      <a href="tel:+1-800-277-7766" class="call-us link-unstyled">
+        <img src="styles/image/icon-phone.png" width="56" height="56" alt="Phone">
+        <h3 class="call-us-title"><span>Call us</span></h3>
+        <div class="call-us-number">+1-800-277-7766</div>
+      </a>
+      <a href="#" class="location link-unstyled">
+        <img src="styles/image/icon-location.png" width="56" height="56" alt="Location">
+        <h3 class="location-title">Location</h3>
+        <div class="location-address">Moscow, Pushkin str. 32/A</div>
+      </a>
+      <a href="mailto:info@domain.com" class="mail link-unstyled">
+        <img src="styles/image/icon-mail.png" width="56" height="56" alt="Mail">
+        <h3 class="mail-title">Mail</h3>
+        <div class="mail-address">info@domain.com</div>
+      </a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <a class="rights link-unstyled">2016 Domain.com. All rights reserved</a>
+      <div class="conditions">
+        <a href="#" class="terms-conditions link-unstyled">Terms & Conditions</a>
+        <a href="#" class="privacy link-unstyled">Privacy</a>
+        <a href="#" class="download link-unstyled">Download</a>
+      </div>
+      <div class="networks-link">
+        <a href="#" class="twitter link-unstyled">
+          <img src="styles/image/icon-twitter.png" width="19" height="19" alt="">
+        </a>
+        <a href="#" class="google link-unstyled">
+          <img src="styles/image/icon-google.png" width="19" height="19" alt="">
+        </a>
+        <a href="#" class="facebook link-unstyled">
+          <img src="styles/image/icon-facebook.png" width="19" height="19" alt="">
+        </a>
       </div>
     </div>
-    <form action="#" class="subscription-input">
-      <input type="email" placeholder="Email address">
-      <button><img src="styles/image/icon-subscriptions.png" width="33" height="26"><span>SUBSCRIBE</span></button>
-    </form>
-  </div>
-</div>
-<div class="hot-links">
-  <div class="container">
-    <a href="#" class="free-shiping link-unstyled"><span>FREE SHIPPING</span></a>
-    <a href="#" class="customer-support link-unstyled"><span>CUSTOMER SUPPORT</span></a>
-    <a href="#" class="money-back link-unstyled"><span>15 DAYS MONEY BACK</span></a>
-    <a href="#" class="help-center link-unstyled"><span>24/7 HELP CENTER</span></a>
-  </div>
-</div>
-<div class="contacts">
-  <div class="container contact-link">
-    <a href="tel:+1-800-277-7766" class="call-us link-unstyled">
-      <img src="styles/image/icon-phone.png" width="56" height="56" alt="Phone">
-      <h3 class="call-us-title"><span>Call us</span></h3>
-      <div class="call-us-number">+1-800-277-7766</div>
-    </a>
-    <a href="#" class="location link-unstyled">
-      <img src="styles/image/icon-location.png" width="56" height="56" alt="Location">
-      <h3 class="location-title">Location</h3>
-      <div class="location-address">Moscow, Pushkin str. 32/A</div>
-    </a>
-    <a href="mailto:info@domain.com" class="mail link-unstyled">
-      <img src="styles/image/icon-mail.png" width="56" height="56" alt="Mail">
-      <h3 class="mail-title">Mail</h3>
-      <div class="mail-address">info@domain.com</div>
-    </a>
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <a class="rights link-unstyled">2016 Domain.com. All rights reserved</a>
-    <div class="conditions">
-      <a href="#" class="terms-conditions link-unstyled">Terms & Conditions</a>
-      <a href="#" class="privacy link-unstyled">Privacy</a>
-      <a href="#" class="download link-unstyled">Download</a>
-    </div>
-    <div class="networks-link">
-      <a href="#" class="twitter link-unstyled">
-        <img src="styles/image/icon-twitter.png" width="19" height="19" alt="">
-      </a>
-      <a href="#" class="google link-unstyled">
-        <img src="styles/image/icon-google.png" width="19" height="19" alt="">
-      </a>
-      <a href="#" class="facebook link-unstyled">
-        <img src="styles/image/icon-facebook.png" width="19" height="19" alt="">
-      </a>
-    </div>
-  </div>
-</footer>
-<script src="jquery-3.1.1.min.js"></script>
-<script src="slick/slick.min.js"></script>
-<script src="index.js"></script>
+  </footer>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="uniform/js/jquery.uniform.standalone.js"></script>
+  <script src="fancybox/jquery.fancybox.pack.js"></script>
+  <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

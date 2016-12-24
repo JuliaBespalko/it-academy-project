@@ -1,5 +1,4 @@
 .slider2 {
-  border-top: 1px solid #e6e6e6;
   margin: 60px auto 42px;
 }
 .slider2-body {
@@ -7,19 +6,21 @@
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   padding: 0;
   justify-content: space-between;
+  overflow: hidden;
 }
-.slider2-slide {
+.new-post {
   flex-basis: 25%;
   flex-shrink: 0;
+  margin: 0 10px;
   box-sizing: border-box;
   text-align: center;
 }
-.slider2-slide a {
+.new-post a {
   display: block;
   border-bottom: 1px solid #e6e6e6;
   transition: border-color 0.2s;
 }
-.slider2-slide a:hover {
+.new-post a:hover {
   border-bottom: 1px solid #be926f;
   transition: border-color 0.2s;
 }
@@ -30,7 +31,7 @@
   align-content: center;
   margin: 30px 0;
 }
-.new-post-title {
+.slider2-title {
   font-size: 1.2em;
   font-weight: bold;
   color: #232323;
@@ -106,7 +107,7 @@
 .slider2-next:hover .next-img-brown {
   opacity: 0.7;
 }
-.slider2-slide img {
+.new-post img {
   margin: 0 auto;
 }
 .new-post-category-care {

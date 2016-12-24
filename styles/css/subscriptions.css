@@ -64,10 +64,11 @@
 
 @media (max-width: 1175px){
   .subscriptions .container {
-    width: 650px;
+    width: 100%;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
   .subscriptions-text {
     width: 60%;
