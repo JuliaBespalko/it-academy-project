@@ -1,29 +1,38 @@
 .products {
   margin-bottom: 35px;
 }
+
 .products .title {
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
   font-size: 1.1333em;
   line-height: 1.2941;
   color: #232323;
-  }
+}
+
 .products-list {
   font-family: Montserrat, Arial, "Helvetika Neue", Helvetika, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 23px auto;
 }
+
 .product {
+  -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
   text-align: center;
 }
+
 .product + .product {
   border-left: none;
 }
+
 .product-title {
   font-size: 1.1333em;
   line-height: 1.2941em;
@@ -31,19 +40,22 @@
   margin-top: 1.7em;
   margin-bottom: 0.6em;
 }
+
 .product-category {
   color: #999999;
   font-size: 0.8em;
   line-height: 2;
   margin-bottom: 0.75em;
 }
+
 .product-price {
   color: #be926f;
   font-size: 1.2333em;
   line-height: 1.2;
   margin-top: 0.6em;
-  margin-bottom: 1em;
+  margin-bottom: 1.1em;
 }
+
 .product-actions {
   position: relative;
   width: 210px;
@@ -51,6 +63,7 @@
   margin: 0 auto;
   border: 1px solid #ffe0cb;
 }
+
 .product-actions:before {
   content: '';
   position: absolute;
@@ -60,8 +73,10 @@
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   opacity: 0;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
+
 .product-actions .label {
   position: absolute;
   width: 3.416em;
@@ -76,7 +91,8 @@
   text-transform: uppercase;
   font-size: 0.8em;
 }
-.product-actions .additional-links  {
+
+.product-actions .additional-links {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,9 +102,11 @@
   width: 130px;
   height: 84px;
   opacity: 0;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.product-actions .additional-links  .add-to-carts {
+
+.product-actions .additional-links .add-to-carts {
   background-color: #be926f;
   display: block;
   padding: 8px 0;
@@ -96,10 +114,16 @@
   text-decoration: none;
   margin-bottom: 19px;
 }
+
 .product-actions .additional-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .product-actions .additional-links ul a {
   display: block;
   width: 25px;
@@ -109,19 +133,23 @@
   background-position: center center;
 }
 
-.product-actions .additional-links  .to-favorites {
+.product-actions .additional-links .to-favorites {
   background-image: url("../image/icon-favorites.png");
 }
+
 .product-actions .additional-links .to-comparison {
   background-image: url("../image/icon-comparison.png");
 }
+
 .product-actions .additional-links .zoom {
   background-image: url('../image/icon-zoom.png');
 }
+
 .product:hover .product-actions:before,
 .product:hover .product-actions .additional-links {
   opacity: 1;
 }
+
 .product-actions .additional-links ul a:hover {
   background-color: rgba(190, 146, 111, 0.8);
 }
@@ -129,37 +157,50 @@
 /*@media*/
 
 @media (max-width: 1030px) {
-  .products .title{
+  .products .title {
     text-align: center;
   }
+
   .products-list {
     width: 600px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }
-  .product{
+
+  .product {
+    -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
   }
-   .product + .product {
+
+  .product + .product {
     border-left: 1px solid #e6e6e6;
   }
-   .product:nth-child(3),
-   .product:nth-child(4) {
-     border-top: none;
-   }
+
+  .product:nth-child(3),
+  .product:nth-child(4) {
+    border-top: none;
+  }
 }
+
 @media (max-width: 640px) {
   .products-list {
     width: 320px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
   }
-  .product{
+
+  .product {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
+
   .product + .product {
     border-top: none;
   }

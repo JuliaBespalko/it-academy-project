@@ -2,6 +2,7 @@ $(function () {
   var $mainSlider = $('.slider-container');
   var $slider2 = $('.slider2-body');
   var $sliderPreview = $('.product-preview .thumbs');
+  var $sliderPrevBig = $('.product-preview .product-photo');
 
   $mainSlider.slick({
     arrows: false,
@@ -38,7 +39,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 630,
+        breakpoint: 635,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -52,8 +53,21 @@ $(function () {
     slidesToShow: 3,
     verticalSwiping: true,
     slidesToScroll: 3,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 695,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
   });
+
 
   $('.fancybox').fancybox();
 
@@ -71,16 +85,16 @@ $(function () {
   });
 
   var $ratingStars = $('.rating .rating-star');
-  $ratingStars.find('input').on('click', function() {
+  $ratingStars.find('input').on('click', function () {
     var $ratingVal = $(this).closest('label');
     $ratingVal.prevAll().addClass('rating-input');
     $ratingVal.nextAll().removeClass('rating-input')
   });
 
-  $('.spinner input').spinner({ min: 0, max: 50, numberFormat: "n"}).val('01');
+  $('.spinner input').spinner({min: 0, max: 50, numberFormat: "n"}).val('01');
 
 
-  $('.tabs .tab-nav li a').on('click', function(e) {
+  $('.tabs .tab-nav li a').on('click', function (e) {
     e.preventDefault();
     $('.tab-nav li a').removeClass('active');
     $(this).addClass('active');
@@ -90,9 +104,9 @@ $(function () {
 
     function showNextTab() {
       $('.tabcontent.active').removeClass('active');
-      $('#'+tabToShow).hide(300, function () {
+      $('#' + tabToShow).hide(300, function () {
         $(this).addClass('active')
       })
     }
   })
-  });
+});
